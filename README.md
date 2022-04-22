@@ -1,71 +1,86 @@
-# Phase 1 Project Template - Minimum Viable Product (MVP)
+# The Mystery of Microsoft Movie and Streaming Division
 
-![blueprint](images/blueprint.png)
+**Author:** Grant Edwards
 
-This repository is like a blueprint, providing structure for your first End of Phase Project. We suggest you base your Phase 1 project off of this repository so you can focus less on formatting and organization, and more on the _analysis and communication skills_ that will support your progress through the course. This template is designed to make your project portfolio-ready in order to impress the future employers who will review it. 
+## Overview
 
-## Repository Contents
+Microsoft wants to launch a new streaming and movie division to compete within the theatric box office and home entertainment industry that has high potential to generate revenue but is a competitive industry. To support the launch, we have analyzed data from past movies to find the best genres Mystery and Horror, with high return on investments and low cost of production. May would be an ideal launch month as it historically has a lower number of releases and the highest ROI. We also found that James Wan, David F. Sandberg, and M. Night Shyamalan would all make great directors for our starting films with their experience and success in these genres.
+***
 
-Below is a list of the contents of this repository - instructions for using them are in the next section.
+## Business Problem
 
-- `README.md`: The README for this repo branch explaining it's contents - you're reading it now
-- `TEMPLATE_README.md`: An example of a project README that provides a brief overview of your whole project
-- `dsc-phase1-project-template.ipynb`: A starter Jupyter Notebook with headings, code examples and guiding questions
-- `DS_Project_Presentation_Template.pdf`: A starter slide deck presenting your project - here is an [editable version](https://docs.google.com/presentation/d/1PaiH1bleXnhiPjTPsAXQSiAK0nkaRlseQIr_Yb-0mz0/copy)
-- `data` folder: A folder for the data you reference with your code
-- `images` folder: A folder for the images you reference in your files 
-- `.gitignore`: A hidden file that tells git to not track certain files and folders
+Microsoft wants to start a new streaming and movie division to compete with the likes of Netflix, Hulu, Amazon, Apple, and other major streaming services after seeing competitors’ various success in the field and it is good for large businesses to expand into a variety of industries as to have a more diverse portfolio. The theatric box office and home entertainment is a $100 billion dollar industry (variety, 2022). With a sector this large and with high potential return on investment, it would be a great opportunity for Microsoft to achieve an additional source of revenue for Microsoft, it will be another means to reach more potential customers for other sectors of the organization. 
 
-## Instructions For Using This Repository
+To find where to start this new division we will be answering the following questions:
 
-### Fork This Repository
 
-**For a group project**, have only one team member do these steps:
+* What is the best genre of movie to start with?
+* When would be the ideal release date?
+* Who should be chosen as the director for the film?
 
-1. Fork this repository to your personal account
-   - In GitHub, go to this repository and click the "Fork" button in the upper right
-   
-2. Change the name of your fork of this repo to a _descriptive_ name of your choosing
-   - In GitHub, go to your fork of this repo -> "Settings" -> "Options" -> "Repository Name" -> "Rename"
-   - Make the name descriptive, since potential employers will read it. Ex: "Microsoft-Movie-Analysis" is better than "Project-1"
+To accomplish this, we will be using data from IMDB, Rotten Tomatoes, TheMovieDB and The Numbers.
 
-3. Use `git clone` to clone your fork of this repo to your local computer
+Breaking into the theatric and home entertainment industry can be difficult with many big competitors already established and can have large cost of entry, with many films costing tens or even hundreds of millions of dollars to produce. The reason why we are focusing on these key points is that we can find the best genres to break into the industry without high costs of production, when to launch our program, so that we are not getting lost in a sea of compaction, and finding a director who has already found success in the genre and the industry to give us a solid backbone to get off to a good start. 
+***
 
-4. **For a group project**, add team members as collaborators to your fork of this repo
-   - In GitHub, go to your fork of this repo -> "Settings" -> "Manage Access" -> "Invite Teams or People"
-   - Add your project team members as collaborators & send them the repo GitHub URL
+## Data
 
-### Work In Your Fork Of This Repository
+The data we will be using for this project comes from Box Office Mojo, IMDB, Rotten Tomatoes, TheMovieDB and The Numbers. It contains information on movies, such as: the key personal involved in producing the films, reviews, and financials.
+The key factors that we will be using to find achieve our goals of best genre, time of release and ideal director will be the financials of the movies (global gross and production budget), the release month of films and how films perform in each month, and who directed the most successful films in the genre that has the most potential. This should leave s with a solid starting point to break into the cinematic industry. 
 
-- Work in the repo clone that you created on your local machine
-- Start writing and coding in the Jupyter Notebook `dsc-phase1-project-template.ipynb`
-- Fill in the README template in `TEMPLATE_README.md`
-- Use `git add`, `git commit`, and `git push` often to update your repo in GitHub
-   - For a refresher on how to do this and why it's important, review Topic 2: Bash and Git
+The most important data we will be looking it is the financials. Besides global gross and the production budget, we will look at profit (global gross – production budget) and the return of investment (ROI = (profit/production budget)*100). There are other factors that we will not be going into that are not factored into this (such as advertising and other expenses). 
+***
 
-### Use The Slide Template
+## Methods
 
-1. Go to [this link](https://docs.google.com/presentation/d/1PaiH1bleXnhiPjTPsAXQSiAK0nkaRlseQIr_Yb-0mz0/copy) to make an editable copy of the slide deck in your own Google Drive account
-2. Go to "Slide," select "Change Theme," and pick a theme you like so your presentation doesn't look like everyone else's
-3. **For a group project**, click the "Share" button and add your teammates as editors
+Describe the process for analyzing or modeling the data. For Phase 1, this will be descriptive analysis.
+We starting by getting the needed data into DataFrames.
+Most of the innitial data was not too useful on its own, so DataFrames were combined using SQL.
+The data was cleaned, finaincial strings were converted to floats, duplicated and missing data was removed.
+Created new columns for profit and ROI. 
+Graph data using matplotlib and seaborn. 
+***
 
-### Tidy Up Your Project
+## Results
 
-- Change the file name of the Jupyter Notebook (`dsc-phase1-project-template.ipynb`) to something more descriptive
-- Save an appropriately-named PDF version of your slide deck to the repository
-- Rename the template readme you've been working in by running `git mv TEMPLATE_README.md README.md`
-- Delete unnecessary files from the repo using `git rm`
-   - The presentation PDF: `DS_Project_Presentation_Template.pdf`
-   - This README file: `README.md`
-   - Any unused data files in the `data` folder
-   - Any unused images in the `images` folder
-
-### Submit Your Project
-
-To submit your project, please follow the instructions in the "Project Submission & Review" page in the Milestones course.
+We found that Mystery and Horror are both high ROI genres with low cost of production and would make ideal starting genres for a new movie to start this program.
+For the release month May had both the highest ROI of all months and a lower number of release dates making it an ideal launch Month.
+We also found that James Wan, David F. Sandberg, and M. Night Shyamalan would all make great directors for our starting films with their experience and success in these genres.
 
 ***
-### Notes
+Questions to consider:
+* How do you interpret the results?
+* How confident are you that your results would generalize beyond the data you have?
+***
 
-- The visualizations in the notebook use best practices for visualization that you should try to emulate. For example, they have clear axes, descriptive titles, and appropriate number formatting
-- The `dsc-phase1-project-template.ipynb` is intended to be the _final version_ of your project. The first notebook you create will not look like this. You are encouraged to start with a very disorderly notebook and clean it as you go
+Here is an example of how to embed images from your sub-folder:
+
+### Visual 1
+![graph1](./images/viz1.png)
+
+## Conclusions
+
+These results should help us get a good starting position for a new streaming and movie division, creating a solid foundation and giving owners and investors confidence in our high rate of return for the first couple of films. This should lead us to more higher budget films in the future but this would be the best starting course of action and good short term goals. In the event that a movie does not perform well, the lower cost will be easier to bare. I am confident that this will lead to a string start in the launch of a new division. 
+
+If we procced in this direction it would be good to look at writers, and other key personal for the films. We could also capitalize on other division of Microsoft (such as gaming) to find film ideas, or even look outside the organization, such as at novels and original screenplays. 
+
+Potential issues include potential missing or incorrect data, as well as outdated data. There is also far more factors that affect the success of a movie and streaming services. It would be good to dive deeper and get more in-depth information about the films and consider other factors. 
+***
+
+## For More Information
+
+Please review our full analysis in [our Jupyter Notebook](./dsc-phase1-project-template.ipynb) or our [presentation](./DS_Project_Presentation.pdf).
+
+For any additional questions, please contact **Grant Edwards, grantedwards11@gmail.com**
+
+## Repository Structure
+
+Describe the structure of your repository and its contents, for example:
+
+```
+├── README.md                           <- The top-level README for reviewers of this project
+├── micro-movie-project.ipynb           <- Narrative documentation of analysis in Jupyter notebook
+├── micro_movie_presentation.pdf        <- PDF version of project presentation
+├── data                                <- Both sourced externally and generated from code
+└── images                              <- Both sourced externally and generated from code
+```

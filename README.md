@@ -49,7 +49,7 @@ We found that Mystery and Horror are both high ROI genres with low cost of produ
 ***
 For the release month May had both the highest ROI of all months and a lower number of release dates making it an ideal launch Month.
 ![graph3](./images/monthROI.png)
-![graph4](./images/monthSum.png)
+![graph4](./images/MonthSum.png)
 ***
 We also found that James Wan, David F. Sandberg, and M. Night Shyamalan would all make great directors for our starting films with their experience and success in these genres.
 ![graph5](./images/directorMystery.png)
@@ -60,10 +60,6 @@ Questions to consider:
 * How confident are you that your results would generalize beyond the data you have?
 ***
 
-Here is an example of how to embed images from your sub-folder:
-
-### Visual 1
-![graph1](./images/viz1.png)
 
 ## Conclusions
 
@@ -76,7 +72,7 @@ Potential issues include potential missing or incorrect data, as well as outdate
 
 ## For More Information
 
-Please review our full analysis in [our Jupyter Notebook](./micro-movie-project.ipynb) or our [presentation](./micro-movie-presentation.pdf).
+Please review our full analysis in [our Jupyter Notebook](./micro-movie-project.ipynb) or our [presentation](./micro_movie_presentation.pdf).
 
 For any additional questions, please contact **Grant Edwards, grantedwards11@gmail.com**
 

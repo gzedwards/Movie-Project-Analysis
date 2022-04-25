@@ -33,20 +33,27 @@ The most important data we will be looking it is the financials. Besides global 
 
 ## Methods
 
-Describe the process for analyzing or modeling the data. For Phase 1, this will be descriptive analysis.
-We starting by getting the needed data into DataFrames.
-Most of the innitial data was not too useful on its own, so DataFrames were combined using SQL.
-The data was cleaned, finaincial strings were converted to floats, duplicated and missing data was removed.
+We started by getting the needed data into DataFrames.
+Most of the initial data was not too useful on its own, so DataFrames were combined using SQL.
+The data was cleaned, financial strings were converted to floats, duplicated and missing data was removed.
 Created new columns for profit and ROI. 
-Graph data using matplotlib and seaborn. 
+Graph data using matplotlib and seaborn.
+
 ***
 
 ## Results
 
 We found that Mystery and Horror are both high ROI genres with low cost of production and would make ideal starting genres for a new movie to start this program.
+![graph1](./images/genreROI.png)
+![graph2](./images/genreBudget.png)
+***
 For the release month May had both the highest ROI of all months and a lower number of release dates making it an ideal launch Month.
+![graph3](./images/monthROI.png)
+![graph4](./images/monthSum.png)
+***
 We also found that James Wan, David F. Sandberg, and M. Night Shyamalan would all make great directors for our starting films with their experience and success in these genres.
-
+![graph5](./images/directorMystery.png)
+![graph6](./images/directorHorror.png)
 ***
 Questions to consider:
 * How do you interpret the results?
@@ -69,7 +76,7 @@ Potential issues include potential missing or incorrect data, as well as outdate
 
 ## For More Information
 
-Please review our full analysis in [our Jupyter Notebook](./dsc-phase1-project-template.ipynb) or our [presentation](./DS_Project_Presentation.pdf).
+Please review our full analysis in [our Jupyter Notebook](./micro-movie-project.ipynb) or our [presentation](./micro-movie-presentation.pdf).
 
 For any additional questions, please contact **Grant Edwards, grantedwards11@gmail.com**
 
